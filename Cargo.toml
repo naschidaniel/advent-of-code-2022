@@ -1,0 +1,10 @@
+[package]
+name = "advent-of-code-2022"
+authors = ["Daniel Naschberger <daniel@naschi.at>"]
+description = "My solutions to Advent of Code 2022"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/naschidaniel/advent-of-code-2022/"
+license = "GPL-3.0"
+
+[dependencies]
