@@ -22,5 +22,6 @@ mv to main folder
 
 ## Solutions
 
-Day 1: Calorie Counting [Part1]
-Day 2: Rock Paper Scissors [Part1]
+🎄 Day 01: Calorie Counting [Part1]
+
+🎅 Day 02: Rock Paper Scissors [Part1]
