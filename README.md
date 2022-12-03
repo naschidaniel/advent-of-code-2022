@@ -25,3 +25,5 @@ mv to main folder
 🎄 Day 01: Calorie Counting [Part1]
 
 🎅 Day 02: Rock Paper Scissors [Part1]
+
+🎒 Day 03: Rucksack Reorganization [Part1]

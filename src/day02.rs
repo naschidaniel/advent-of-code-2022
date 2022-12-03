@@ -24,15 +24,15 @@ struct Game {
 
 impl Game {
     /// Rules
-// Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock. If both players choose the same shape, the round instead ends in a draw.
-// // (Me | Response)
-// // (A | X) Rock ... 1
-// // (B | Y) Paper ... 2
-// // (C | Z) Scissors ... 3
+    // Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock. If both players choose the same shape, the round instead ends in a draw.
+    // // (Me | Response)
+    // // (A | X) Rock ... 1
+    // // (B | Y) Paper ... 2
+    // // (C | Z) Scissors ... 3
 
-// // Win ... 6
-// // Draw ... 3
-// // Loose ... 0
+    // // Win ... 6
+    // // Draw ... 3
+    // // Loose ... 0
     fn init(input: String) -> Self {
         let total_player_1 = 0;
         let total_player_2 = 0;
@@ -70,9 +70,15 @@ impl Game {
             let input_2 = comparison.to_owned().1;
             let winner = if input_1 == input_2 {
                 "draw"
-            } else if (input_1 == "Rock" && input_2 == "Scissors") || (input_1 == "Scissors" && input_2 == "Paper") || (input_1 == "Paper" && input_2 == "Rock") {
+            } else if (input_1 == "Rock" && input_2 == "Scissors")
+                || (input_1 == "Scissors" && input_2 == "Paper")
+                || (input_1 == "Paper" && input_2 == "Rock")
+            {
                 "player_1"
-            } else if (input_1 == "Paper" && input_2 == "Scissors") || (input_1 == "Scissors" && input_2 == "Rock") || (input_1 == "Rock" && input_2 == "Paper") {
+            } else if (input_1 == "Paper" && input_2 == "Scissors")
+                || (input_1 == "Scissors" && input_2 == "Rock")
+                || (input_1 == "Rock" && input_2 == "Paper")
+            {
                 "player_2"
             } else {
                 panic!("The rule for {} against {} is missing!", input_1, input_2)

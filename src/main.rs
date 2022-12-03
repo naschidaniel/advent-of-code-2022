@@ -3,6 +3,7 @@ use std::time::Instant;
 
 mod day01;
 mod day02;
+mod day03;
 
 fn main() {
     let start_time = Instant::now();
@@ -11,6 +12,7 @@ fn main() {
     match day {
         1 => day01::solution_day01(),
         2 => day02::solution_day02(),
+        3 => day03::solution_day03(),
         _ => panic!("There is no solution for this day {}!", args[1]),
     }
     let end_time = start_time.elapsed();
